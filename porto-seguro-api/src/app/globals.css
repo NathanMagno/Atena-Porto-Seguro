@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.botao{
+  @apply block py-[0.2vw] px-4 bg-[#3da3d0] text-white rounded-lg border border-[#fdfdfdec] cursor-pointer mx-auto my-[5vh] justify-center items-center transition ease-in duration-150 hover:bg-[#262626] hover:text-[#68ee86] h-[50px] w-[180px] text-[100%] sm:w-[110px] sm:h-[50px] sm:text-[90%] xl:w-[100px] xl:h-[40px] xl:text-[80%]
+}
