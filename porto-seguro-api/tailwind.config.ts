@@ -11,9 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        aliceblue: '#f0f8ff'
       },
     },
   },
   plugins: [],
 };
 export default config;
+  
