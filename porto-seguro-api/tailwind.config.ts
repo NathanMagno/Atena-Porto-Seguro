@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        aliceblue: '#f0f8ff'
+        aliceblue: '#f0f8ff',
+        porto: '#3da3d0',
+        oxigenio: '#68ee86'
       },
     },
   },
