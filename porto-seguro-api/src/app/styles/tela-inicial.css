@@ -6,11 +6,10 @@
 .servico
 {
     @apply flex items-center  bg-oxigenio justify-between cursor-pointer text-white mt-[5vh] 
-    rounded-r-[100px] rounded-l-none p-[8vw] 
+    rounded-r-[100px] rounded-l-none p-[8vw]
     transition-all duration-200 ease-in 
     hover:bg-black 
-    w-[1300px] h-[120px] text-[50px] 
-    max-w-[1440px] max-w-[1440px] max-w-[1440px]
+    w-[1300px] h-[120px] text-[50px]  max-w-[1440px] max-w-[1440px] max-w-[1440px]
     max-w-[761px] max-w-[761px] max-w-[761px]
     max-w-[564px] max-w-[564px] max-w-[564px]
 }

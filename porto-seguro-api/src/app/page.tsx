@@ -1,8 +1,9 @@
 "use client"
 import Funcionalidades from "@/components/Funcionalidades/Funcionalidades";
-import Icone from "@/imgs/icons8-carro-50.png" ;
+import IconeCarrro from "@/imgs/icons8-carro-50.png" ;
+import IconeContato from "@/imgs/icons8-telefone-desligado-64.png" ;
+import IconeAdd from "@/imgs/icons8-soma-30.png" ;
 import { useEffect } from "react";
-
 
 
 export default function Home() {
@@ -16,14 +17,13 @@ export default function Home() {
       <div>
 
       <Funcionalidades  nome="Seus veículos"
-          icone={Icone} link=""/>
+          icone={IconeCarrro} link="./login"/>
 
-      <Funcionalidades  nome="Seus veículos"
-          icone={Icone} link=""/>
+      <Funcionalidades  nome="Adicionar Veiculos"
+          icone={IconeAdd} link=""/>
 
-      <Funcionalidades  nome="Seus veículos"
-          icone={Icone} link=""/>
-
+      <Funcionalidades  nome="Contato com suporte"
+          icone={IconeContato} link=""/>
 
       </div>
   </>
