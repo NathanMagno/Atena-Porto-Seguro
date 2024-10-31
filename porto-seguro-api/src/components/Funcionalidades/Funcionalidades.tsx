@@ -19,8 +19,8 @@ export default function Funcionalidades({ nome, icone, link }: FuncionalidadesPr
 
     return (
         <div className="servico" onClick={navegar}>
-            <div className="iconeServico">
-                <Image src={icone}  alt={"Ícone do servico " + nome}/>
+            <div >
+                <Image className="iconeServico" src={icone}  alt={"Ícone do servico " + nome}/>
             </div>
             <div>
                 <h3 className="tituloServico">{nome}</h3>

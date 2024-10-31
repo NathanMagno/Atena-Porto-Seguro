@@ -3,31 +3,47 @@
 @tailwind utilities;
 
 @layer {
-.servico
-{
-    @apply flex items-center  bg-oxigenio justify-between cursor-pointer text-white mt-[5vh] 
-    rounded-r-[100px] rounded-l-none p-[8vw]
-    transition-all duration-200 ease-in 
-    hover:bg-black 
-    w-[1300px] h-[120px] text-[50px]  max-w-[1440px] max-w-[1440px] max-w-[1440px]
-    max-w-[761px] max-w-[761px] max-w-[761px]
-    max-w-[564px] max-w-[564px] max-w-[564px]
-}
+    .servico {
+        @apply flex items-center bg-oxigenio justify-between cursor-pointer text-white mt-[5vh]
+               rounded-r-[100px] rounded-l-none ps-80
+               transition-all duration-200 ease-in
+               hover:bg-black 
+               h-[120px] text-[50px] 
+               
+               xl:w-[1100px] 
+               2xl:w-[45vw] 2xl:h-[100px] 2xl:text-[30px] 
+               md:w-[400px] md:h-[80px] md:text-[20px] 
+               sm:w-[90vw] sm:h-[80px] sm:text-[14px]
+               mobile:w-[90vw] mobile:text-[22px];
+    }
+    
 }
 
 @layer {
 .iconeServico
 {
-    @apply  bg-white rounded-full block text-center flex justify-center items-center 
-     w-[1.6em] h-[1.6em] 
-    max-w-[4400px] max-w-[4400px] max-w-[4400px]
-    max-w-[1440px] max-w-[1440px] max-w-[1440px]
-    max-w-[761px] max-w-[761px] max-w-[761px]
-    max-w-[564px] max-w-[564px] max-w-[564px]
+    @apply  block bg-white rounded-full text-center 
+     w-[1.8em] h-[2.6em]  m-10
 }}
 
 
 .tituloServico
 {
-    @apply text-inherit text-[0.9em] m-0 
+    @apply text-inherit text-[0.9em] m-10
+}
+
+
+.servicosContainer
+{
+    @apply flex flex-col justify-start text-center w-screen h-screen mt-[3vh] gap-9
+}
+
+.FundoInicial
+{
+    @apply flex bg-[url('/background-1280x985.jpg')] bg-cover bg-no-repeat bg-center w-screen h-screen fixed
+}
+
+.CabecalhoVerde{
+    @apply flex items-center justify-between relative bg-oxigenio text-porto h-[10vh] px-[10vw]
+    text-[20px] 4xl:text-[20px] 2xl:text-[14px] md:text-[10px]
 }

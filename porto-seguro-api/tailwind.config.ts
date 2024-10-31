@@ -13,6 +13,13 @@ const config: Config = {
         porto: '#3da3d0',
         oxigenio: '#68ee86'
       },
+      screens: {
+        "2xl": "1440px",
+        "3xl": "1600px",
+        "4xl": "1920px",
+        "5xl": "2200px",
+        "mobile": "280px",
+      }
     },
   },
   plugins: [],
