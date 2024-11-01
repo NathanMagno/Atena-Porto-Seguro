@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Gradient{
+@apply    w-screen h-screen flex flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center fixed
+}
+
+.CabecalhoAzul{
+@apply     flex bg-[#3da3d0] p-3 justify-center static
+}
+
+.RodapeCadastro{
+@apply  mt-[5vh] text-base flex h-[10vh] flex-col items-center    
+}
+
+.RodapeLink{
+@apply     
+}
+
+
+
+
