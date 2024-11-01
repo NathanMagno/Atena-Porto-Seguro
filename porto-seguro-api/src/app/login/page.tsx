@@ -3,6 +3,8 @@
 import BgGradient from "@/components/BgGradient/BgGradient";
 import Button from "@/components/Button/Button";
 import CabecalhoAzul from "@/components/CabecalhoAzul/CabecalhoAzul";
+import FormularioLogin from "@/components/FormularioLogin/FormularioLogin";
+import RodapeCadastro from "@/components/RodapeCadastro/RodapeCadastro";
 import { useEffect } from "react";
 
 

@@ -11,16 +11,16 @@ interface RodapeCadastroProps {
   export default function RodapeCadastro({ link1, link2, nomeLink1, nomeLink2 }: RodapeCadastroProps) {
     return (
       <>
-        <StyledRodapeLink>
+        <footer className="RodapeLink">
           <nav>
-            <StyledListaDesordenada>
-              <StyledLi><StyledLink to={link1}>{nomeLink1} </StyledLink></StyledLi>
-              <StyledLi><StyledLink to={link2}>{nomeLink2}</StyledLink></StyledLi>
-            </StyledListaDesordenada>
+            <ul className="ListaDesordenada">
+              <li className="Li">{link1},{link2}</li>
+              <li className="Li">{nomeLink1},{nomeLink2}</li>
+            </ul>
   
           </nav>
   
-        </StyledRodapeLink>
+        </footer>
   
       </>
     )

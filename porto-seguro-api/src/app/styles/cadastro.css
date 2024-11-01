@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .Gradient{
-@apply    w-screen h-screen flex flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center fixed
+@apply      w-screen h-screen flex flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center fixed
 }
 
 .CabecalhoAzul{
@@ -11,13 +11,32 @@
 }
 
 .RodapeCadastro{
-@apply  mt-[5vh] text-base flex h-[10vh] flex-col items-center    
+@apply     mt-[5vh] text-base flex h-[10vh] flex-col items-center    
 }
 
 .RodapeLink{
-@apply     
+@apply     no-underline text-inherit text-[1.2em] hover:text-[1.6em] hover:text-aliceblue transition-all duration-100 ease-in
 }
 
+.Li{
+@apply     list-none
+}
+
+.ListaDesordenada{
+@apply     flex justify-around w-screen gap-[10vw] lg:flex-row sm:flex-col sm:items-center sm:gap-[8vh]    
+}
+
+.Link{
+@apply     no-underline text-inherit text-[1.2em] hover:text-aliceblue hover:text-[1.6em] transition-all duration-100 ease-in
+}
+
+.ContainerEntrada{
+@apply     flex flex-col text-start items-center mx-auto
+}
+
+.Input{
+@apply     w-[40vw] border-none text-center justify-center py-2 px-5 text-[1.6em] rounded-[0.6em] bg-[#cececea1] mt-[1vh] md:w-[80vw]    
+}
 
 
 
