@@ -37,8 +37,11 @@ export default function Home() {
       <Funcionalidades  nome="Contato com suporte"
           icone={IconeContato} link=""/>
 
-          <Button titulo="Integrantes" click={navegar}/>
-</BgInicial>
+        
+
+      </BgInicial>
+
+
 
   </>
   );
