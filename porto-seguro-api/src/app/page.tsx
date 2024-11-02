@@ -6,8 +6,8 @@ import IconeAdd from "@/icons/icons8-soma-30.png" ;
 import { useEffect } from "react";
 import BgInicial from "@/components/BgInicial/BgInicial";
 import CabecalhoInicial from "@/components/CabecalhoInicial/CabecalhoInicial";
-import Button from "@/components/Button/Button";
-import { useRouter } from "next/navigation";
+import RodapeInicial from "@/components/RodapeInicial/RodapeInicial";
+
 
 
 
@@ -17,18 +17,14 @@ export default function Home() {
     document.title = "Home";
   }, []);
 
-  const router = useRouter();
 
-  const navegar = () => {
-      router.push("./integrantes");
-  };
 
   return (
   <>
    <CabecalhoInicial/>
 
 <BgInicial>
-      <Funcionalidades  nome="Seus veículos"
+      <Funcionalidades   nome="Seus veículos"
           icone={IconeCarrro} link="./login"/>
 
       <Funcionalidades  nome="Adicionar Veiculos"
@@ -38,6 +34,7 @@ export default function Home() {
           icone={IconeContato} link=""/>
 
         
+        <RodapeInicial/>
 
       </BgInicial>
 

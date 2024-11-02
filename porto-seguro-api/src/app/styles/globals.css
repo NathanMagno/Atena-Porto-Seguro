@@ -10,17 +10,47 @@
   }
 
 .botao{
-  @apply block py-[0.2vw] px-4 bg-[#3da3d0] text-white rounded-lg border border-[#fdfdfdec] cursor-pointer mx-auto my-[5vh] justify-center items-center transition ease-in duration-150 hover:bg-[#262626] hover:text-[#68ee86] h-[50px] w-[180px] text-[100%] sm:w-[110px] sm:h-[50px] sm:text-[90%] xl:w-[100px] xl:h-[40px] xl:text-[80%]
+  @apply block py-[0.2vw] bg-[#3da3d0] text-white rounded-lg border border-[#fdfdfdec] cursor-pointer mx-auto my-[5vh] justify-center items-center transition ease-in duration-150 hover:bg-[#262626] hover:text-[#68ee86] h-[50px] w-[180px] text-[100%] sm:w-[110px] sm:h-[50px] sm:text-[90%] xl:w-[100px] xl:h-[40px] xl:text-[80%]
 }
 
 .cabecalhoVerde {
   @apply flex h-[10vh] flex-row justify-between items-center relative px-[10vw] bg-[#68ee86] text-[#3da3d0] text-[20px] md:text-[14px] sm:text-[10px]
 }
 
-
-
 @layer {
   .link {
   @apply no-underline text-inherit text-[1.2em] hover:text-[1.6em] hover:text-aliceblue transition-[font-size] duration-100 ease-in
   }
+}
+
+
+.modal-content{
+  @apply bg-slate-800 rounded-lg p-6 w-96 shadow-lg relative text-oxigenio xl:w-[30vw] mobile:w-[80vw]
+}
+
+.modal-overlay{
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50
+}
+
+.close-button{
+  @apply absolute top-3 right-3 text-2xl
+}
+
+.Centraliza{
+  @apply mx-auto block relative p-4 text-center flex justify-center items-center
+}
+
+
+.Texto{
+  @apply text-base text-black shadow-sm my-32
+}
+
+
+.InputModal{
+  @apply w-full max-w-md px-4 py-2 border bg-aliceblue border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-oxigenio focus:ring-2 focus:ring-opacity-75 focus:border-transparent text-gray-700 placeholder-gray-400 mt-6 
+}
+
+
+.ContainerInputModal{
+  @apply flex flex-col items-center mt-8
 }

@@ -4,17 +4,14 @@
 
 @layer {
     .servico {
-        @apply flex items-center bg-oxigenio justify-between cursor-pointer text-white mt-[5vh]
-               rounded-r-[100px] rounded-l-none ps-80
+        @apply flex items-center bg-oxigenio justify-evenly cursor-pointer text-white mt-[10vh]
+               rounded-r-[100px] rounded-l-none  gap-44
                transition-all duration-200 ease-in
                hover:bg-black 
-               h-[120px] text-[50px] 
-               
-               xl:w-[1100px] 
+               h-[40vh] text-[50px] 
                2xl:w-[45vw] 2xl:h-[100px] 2xl:text-[30px] 
                md:w-[400px] md:h-[80px] md:text-[20px] 
-               sm:w-[90vw] sm:h-[80px] sm:text-[14px]
-               mobile:w-[90vw] mobile:text-[22px];
+               mobile:w-[90vw] mobile:h-[10vh]  mobile:gap-1 mobile:text-[22px];
     }
     
 }
@@ -24,6 +21,7 @@
 {
     @apply  block bg-white rounded-full text-center 
      w-[1.8em] h-[2.6em]  m-10
+     
 }}
 
 
@@ -35,7 +33,8 @@
 
 .servicosContainer
 {
-    @apply flex flex-col justify-start text-center w-screen h-screen mt-[3vh] gap-9
+    @apply flex flex-col justify-start text-center w-screen h-screen mt-[8vh] gap-24
+     mobile:gap-20
 }
 
 .FundoInicial
@@ -47,3 +46,21 @@
     @apply flex items-center justify-between relative bg-oxigenio text-porto h-[10vh] px-[10vw]
     text-[20px] 4xl:text-[20px] 2xl:text-[14px] md:text-[10px]
 }
+
+.RodapeInicial{
+    @apply flex  items-center justify-start absolute bg-opacity-95 bg-slate-800 w-[100vw] h-[24vh] p-5  bottom-20
+    sm:bg-opacity-100
+    mobile:bg-opacity-0
+}
+
+.SectionRodape{
+    @apply sm:flex items-start justify-start text-white w-[80vw] gap-14
+    mobile:hidden
+}
+
+.ConteudoRodapeInicial{
+    @apply flex flex-col gap-6
+    md:text-[12px]
+    sm:text-[10px]  
+}
+

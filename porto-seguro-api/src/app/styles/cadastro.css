@@ -3,40 +3,59 @@
 @tailwind utilities;
 
 .Gradient{
-@apply      w-screen h-screen flex flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center fixed
+@apply  flex flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center pt-16 relative h-[95vh]
 }
 
 .CabecalhoAzul{
-@apply     flex bg-[#3da3d0] p-3 justify-center static
+@apply     flex bg-[#3da3d0] p-3 justify-center  items-center static h-[5vh]
 }
 
 .RodapeCadastro{
 @apply     mt-[5vh] text-base flex h-[10vh] flex-col items-center    
 }
 
+
+.Input{
+    @apply   border-none text-center justify-center py-2 px-5 text-[1.6em] rounded-[0.6em] bg-[#cececea1] mt-[1vh] md:w-[40vw]   mobile:w-[80vw]
+    }
+  
+
 .RodapeLink{
-@apply     no-underline text-inherit text-[1.2em] hover:text-[1.6em] hover:text-aliceblue transition-all duration-100 ease-in
+@apply     no-underline text-inherit text-[1.2em]
 }
 
 .Li{
-@apply     list-none
-}
+@apply  block list-none cursor-pointer hover:text-aliceblue transition-all duration-100 ease-in  hover:text-[1.6em]
+} 
 
 .ListaDesordenada{
-@apply     flex justify-around w-screen gap-[10vw] lg:flex-row sm:flex-col sm:items-center sm:gap-[8vh]    
+@apply     flex justify-around gap-[10vw] lg:flex-row sm:flex-col sm:items-center
+ sm:gap-[8vh] mobile:flex-col
 }
 
-.Link{
-@apply     no-underline text-inherit text-[1.2em] hover:text-aliceblue hover:text-[1.6em] transition-all duration-100 ease-in
-}
 
 .ContainerEntrada{
 @apply     flex flex-col text-start items-center mx-auto
 }
 
-.Input{
-@apply     w-[40vw] border-none text-center justify-center py-2 px-5 text-[1.6em] rounded-[0.6em] bg-[#cececea1] mt-[1vh] md:w-[80vw]    
+
+
+.Formulario{
+    @apply flex flex-col gap-24
 }
 
+.FormularioCC{
+    @apply flex flex-col gap-16
+}
 
+.ContainerIntegrantes{
+@apply block  mt-16 h-10 pb-8 
+}
 
+.IntegrantesTitulo{
+    @apply xl:text-[32px]  rounded-xl px-10  bg-fiap
+    }
+
+    .BgIntegrantes{
+        @apply  flex flex-col flex-wrap items-center justify-start bg-gray-950 bg-cover bg-no-repeat bg-center text-center pt-16 relative h-[95vh]
+        }

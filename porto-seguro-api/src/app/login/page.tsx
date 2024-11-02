@@ -5,16 +5,24 @@ import Button from "@/components/Button/Button";
 import CabecalhoAzul from "@/components/CabecalhoAzul/CabecalhoAzul";
 import FormularioLogin from "@/components/FormularioLogin/FormularioLogin";
 import RodapeCadastro from "@/components/RodapeCadastro/RodapeCadastro";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 
 export default function Login() {
 
+    const login = useRouter();
 
+    const logar = () => 
+    {
+      login.push("/")
+    }
 
     useEffect (() => {
         document.title = "Login";
       }, []);
+
+
 
       return (
         <>
@@ -24,9 +32,9 @@ export default function Login() {
     
             <FormularioLogin />
     
-            <Button click={()=>{}} titulo="Entrar" />
+            <Button click={logar} titulo="Entrar" />
     
-            <RodapeCadastro link1="./recuperar/senha" link2="./criar/conta"
+            <RodapeCadastro link1="/login/esqueci-senha" link2="/login/criar-conta"
               nomeLink1="Esqueci minha senha" nomeLink2="Criar Conta" />
           </BgGradient>
     

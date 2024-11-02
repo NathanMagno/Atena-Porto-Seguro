@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         aliceblue: '#f0f8ff',
         porto: '#3da3d0',
-        oxigenio: '#68ee86'
+        oxigenio: '#68ee86',
+        fiap: '#ed145b',
       },
       screens: {
         "2xl": "1440px",

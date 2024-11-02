@@ -4,7 +4,7 @@ export default function FormularioLogin() {
     return (
         <>
 
-            <form>
+            <form className="Formulario">
                 <div className="ContainerEntrada">
 
                     <label htmlFor="email">Email</label>
