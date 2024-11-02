@@ -37,7 +37,7 @@
 }
 
 .Centraliza{
-  @apply mx-auto block relative p-4 text-center flex justify-center items-center
+  @apply mx-auto relative p-4 text-center flex justify-center items-center
 }
 
 

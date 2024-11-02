@@ -49,13 +49,41 @@
 }
 
 .ContainerIntegrantes{
-@apply block  mt-16 h-10 pb-8 
+@apply flex  mt-16 h-10 pb-8 items-start justify-center
 }
 
 .IntegrantesTitulo{
-    @apply xl:text-[32px]  rounded-xl px-10  bg-fiap
+    @apply xl:text-[32px]  rounded-xl px-10  bg-fiap w-[20vw]
     }
 
-    .BgIntegrantes{
-        @apply  flex flex-col flex-wrap items-center justify-start bg-gray-950 bg-cover bg-no-repeat bg-center text-center pt-16 relative h-[95vh]
-        }
+    .BgIntegrantes {
+        @apply flex flex-col flex-wrap items-center justify-start bg-gray-950 bg-cover bg-no-repeat bg-center text-center relative overflow-hidden h-[95vh]
+      }
+      
+
+.IntegrantesInfo{
+    @apply mt-16 grid grid-cols-[33%_33%_33%] grid-rows-[50%_20%_30%] justify-items-center gap-8 bg-fiap rounded-2xl p-6 w-[90vw]
+}
+
+
+.ListaGitHub{
+    @apply flex flex-row justify-between w-[100%] bg-fiap mt-6 rounded-full p-4 px-[12vw]
+}
+
+
+.Gabriel{
+    @apply  block  rounded-full  xl:w-[140px] xl:h-[140px] mobile:h-[80px] mobile:w-[80px]
+}
+
+.Gustavo{
+    @apply  block  rounded-full  xl:w-[140px] xl:h-[140px] mobile:h-[80px] mobile:w-[80px]
+}
+
+
+.Nathan{
+    @apply block  rounded-full  xl:w-[140px] xl:h-[140px] mobile:h-[80px] mobile:w-[80px]
+}
+
+.GitHub{
+    @apply block  rounded-full  xl:w-[80px] xl:h-[80px] mobile:h-[80px] mobile:w-[80px]
+}
