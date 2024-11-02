@@ -4,7 +4,7 @@ import { ButtonHTMLAttributes } from "react";
 interface ButtonProps
 {
   titulo: string
-  click: () => void;
+  click?: () => void;
   type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
 
 }

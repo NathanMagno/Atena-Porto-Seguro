@@ -5,7 +5,7 @@ export default function RodapeInicial() {
   const router = useRouter();
 
   const navegar = () => {
-    router.push("/integrantes");
+    router.push("./integrantes");
   };
 
   return (
