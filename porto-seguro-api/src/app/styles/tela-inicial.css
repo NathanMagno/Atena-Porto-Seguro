@@ -42,7 +42,7 @@
 }
 
 .CabecalhoVerde{
-    @apply flex items-center justify-between relative bg-oxigenio text-porto h-[10vh] px-[10vw]
+    @apply flex items-center justify-between relative bg-oxigenio h-[10vh] px-[10vw] xl:gap-[50vw] mobile:gap-[10vw]
     text-[20px] 4xl:text-[20px] 2xl:text-[14px] md:text-[10px]
 }
 
@@ -63,3 +63,18 @@
     sm:text-[10px]  
 }
 
+.ContainerLgout{ 
+    @apply flex  flex-row items-center justify-center gap-4 bg-slate-800 text-white p-6 rounded-lg
+     shadow-lg max-w-md mx-auto my-8 cursor-pointer mobile:p-[0.0001rem] xl:p-[0.2em]  xl:w-[160px] mobile:w-[120px]  
+}
+
+@layer
+{
+.LogoPorto{
+    @apply mobile:w-[110px] xl:w-[250px]
+}
+}
+
+.TituloInforma{
+    @apply text-[24px] 2xl:text-[20px] xl:text-[18] text-oxigenio
+}
