@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.CadastrarVeiculosContainer
+{
+    @apply  grid 
+    lg:grid-cols-[40vw_40vw] lg:grid-rows-[20vh_20vh_20vh] 
+    lg:gap-y-[3vh] lg:gap-x-[10vw]
+    sm:grid-cols-[90vw] sm:grid-rows-[10vh] 
+    sm:gap-y-[1.1vh]
+}
+
+.Voltar{
+    @apply cursor-pointer xl:w-[50px] mobile:w-[35px]
+}

@@ -23,7 +23,7 @@ export default function Funcionalidades({ nome, icone, link }: FuncionalidadesPr
                 <Image className="iconeServico" src={icone}  alt={"Ícone do servico " + nome}/>
             </div>
             <div>
-                <h3 className="tituloServico">{nome}</h3>
+                <h3 className="tituloServico" onClick={navegar}>{nome}</h3>
             </div>
         </div>
     );
