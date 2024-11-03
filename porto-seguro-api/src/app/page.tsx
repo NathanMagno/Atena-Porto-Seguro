@@ -28,7 +28,7 @@ export default function Home() {
           icone={IconeCarrro} link="./login"/>
 
       <Funcionalidades  nome="Adicionar Veiculos"
-          icone={IconeAdd} link=""/>
+          icone={IconeAdd} link="./adicionar-veiculos"/>
 
       <Funcionalidades  nome="Contato com suporte"
           icone={IconeContato} link=""/>
