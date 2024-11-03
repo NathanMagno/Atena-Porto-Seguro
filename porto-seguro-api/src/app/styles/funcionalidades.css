@@ -14,3 +14,44 @@
 .Voltar{
     @apply cursor-pointer xl:w-[50px] mobile:w-[35px]
 }
+
+.ChatContainer
+{
+    @apply   flex flex-col items-center 
+    h-[80vh] w-1
+    mx-auto
+    pb-4
+    rounded-[5px]
+}
+
+.UserInput{
+    @apply   flex-shrink-0 
+    h-[8vh] 
+   mobile:w-[85vw]
+   xl:w-[70vw]
+    border-none 
+    text-center 
+    p-[0.6em] px-[1.2em] 
+    text-[1.6em] 
+    rounded-[32px] 
+    bg-[#cececea1]
+
+}
+
+.ChatBox{
+    @apply relative flex  rounded-md
+    h-[60vh] 
+    border-[3px] border-[#3da3d0] 
+    p-[0.1em] 
+    text-white
+    bg-[#1d1d1d]
+    xl:w-[85vw] mobile:w-[95vw]  ;
+}
+
+.ContainerMensagem{
+    @apply    flex  
+    xl:flex-row items-center xl:gap-[6vw]
+    relative 
+    pt-[6vh] 
+    mobile:flex-col
+}
