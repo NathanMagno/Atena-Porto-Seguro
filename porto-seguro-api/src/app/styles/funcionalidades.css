@@ -8,7 +8,7 @@
     lg:grid-cols-[40vw_40vw] lg:grid-rows-[14vh_14vh_14vh] 
     lg:gap-y-[3vh] lg:gap-x-[10vw]
     sm:grid-cols-[90vw] sm:grid-rows-[10vh] 
-    sm:gap-y-[1.1vh] mt-[10vh]
+    sm:gap-y-[1.1vh] mt-[10vh] relative
 }
 
 .Voltar{
@@ -55,11 +55,11 @@
     pt-[6vh] 
     mobile:flex-col
 }
-
-.ErroMensagem{
-    @apply bg-red-300 border-spacing-0 p-4 mb-4 rounded-2xl xl:w-[200px] mobile:w-[140px] xl:text-[15px] mobile:text-[10px]
+.ErrosContainer {
+    @apply absolute top-0 left-0 right-0 mt-14 z-10 flex items-start justify-center gap-2 h-auto; 
 }
 
-.ErrosContainer{
-    @apply fixed top-0 left-1/2 transform -translate-x-1/2 mt-[8em] m-4 z-10 flex items-center justify-center gap-2;
- }
+
+.ErroMensagem {
+    @apply bg-red-300 border-spacing-0 p-2 mb-0 rounded-2xl xl:w-[200px] mobile:w-[140px] xl:text-[15px] mobile:text-[10px];
+}

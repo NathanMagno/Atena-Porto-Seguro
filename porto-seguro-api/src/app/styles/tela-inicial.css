@@ -32,8 +32,8 @@
 
 .servicosContainer
 {
-    @apply flex flex-col justify-start text-center w-screen h-screen mt-[8vh] gap-24
-     mobile:gap-20
+    @apply flex flex-col justify-start text-center w-screen h-screen mt-[8vh] gap-12
+     mobile:gap-10
 }
 
 .FundoInicial
@@ -47,7 +47,7 @@
 }
 
 .RodapeInicial{
-    @apply flex  items-center justify-start absolute bg-opacity-95 bg-slate-800 w-[100vw] h-[24vh] p-5  bottom-20
+    @apply flex items-center justify-start fixed bg-opacity-95 bg-slate-800 w-[100vw] h-[24vh] p-5  bottom-0
     sm:bg-opacity-100
     mobile:bg-opacity-0
 }
@@ -60,6 +60,8 @@
 .ConteudoRodapeInicial{
     @apply flex flex-col gap-6
     md:text-[12px]
+    sm:text-[10px]  
+    sm:text-[10px]  
     sm:text-[10px]  
 }
 

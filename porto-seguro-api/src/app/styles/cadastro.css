@@ -35,7 +35,7 @@
 
 
 .ContainerEntrada{
-@apply     flex flex-col text-start items-center mx-auto
+@apply     flex flex-col text-start items-center mx-auto 
 }
 
 

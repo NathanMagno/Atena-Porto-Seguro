@@ -35,6 +35,7 @@ export default function FormularioCadastroVeiculo() {
     if (!carro.marca) mensagensErros.push("Marca é obrigatória.");
     if (!carro.modelo) mensagensErros.push("Modelo é obrigatório.");
     if (!carro.cor) mensagensErros.push("Cor é obrigatória.");
+    if (!carro.motor) mensagensErros.push("Cor é obrigatória.");
 
     if (mensagensErros.length > 0) {
       setErros(mensagensErros);
@@ -44,6 +45,8 @@ export default function FormularioCadastroVeiculo() {
         setErros([]);
       }, 2000);
     }
+
+    return mensagensErros.length == 0;
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
