@@ -1,10 +1,10 @@
-import { useState } from "react";
-import Button from "../Button/Button";
-import Modal from "../Modal/Modal";
-import { useRouter } from "next/navigation";
 import "@/app/styles/funcionalidades.css";
 import { novoCarro } from "@/services/Carros";
 import Carro from "@/services/Types";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import Button from "../Button/Button";
+import Modal from "../Modal/Modal";
 
 export default function FormularioCadastroVeiculo() {
   const [carro, setCarro] = useState<Carro>({
@@ -36,9 +36,14 @@ export default function FormularioCadastroVeiculo() {
     if (!carro.modelo) mensagensErros.push("Modelo é obrigatório.");
     if (!carro.cor) mensagensErros.push("Cor é obrigatória.");
 
-    setErros(mensagensErros);
+    if (mensagensErros.length > 0) {
+      setErros(mensagensErros);
 
-    return mensagensErros.length === 0;
+
+      setTimeout(() => {
+        setErros([]);
+      }, 2000);
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -61,15 +66,16 @@ export default function FormularioCadastroVeiculo() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-          {erros.length > 0 && (
-            <div className="ErrosContainer">
-              {erros.map((erro, index) => (
-                <p key={index} className="ErroMensagem">
-                  {erro}
-                </p>
-              ))}
-            </div>
-          )}
+        {erros.length > 0 && (
+          <div className="ErrosContainer">
+            {erros.map((erro, index) => (
+
+              <p key={index} className="ErroMensagem">
+                {erro}
+              </p>
+            ))}
+          </div>
+        )}
         <div className="CadastrarVeiculosContainer">
 
           <div className="ContainerEntrada">
@@ -152,7 +158,7 @@ export default function FormularioCadastroVeiculo() {
 
         </div>
 
-        
+
 
         <Button titulo="Cadastrar" />
       </form>

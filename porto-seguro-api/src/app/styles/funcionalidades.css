@@ -5,10 +5,10 @@
 .CadastrarVeiculosContainer
 {
     @apply  grid 
-    lg:grid-cols-[40vw_40vw] lg:grid-rows-[20vh_20vh_20vh] 
+    lg:grid-cols-[40vw_40vw] lg:grid-rows-[14vh_14vh_14vh] 
     lg:gap-y-[3vh] lg:gap-x-[10vw]
     sm:grid-cols-[90vw] sm:grid-rows-[10vh] 
-    sm:gap-y-[1.1vh]
+    sm:gap-y-[1.1vh] mt-[10vh]
 }
 
 .Voltar{
@@ -55,3 +55,11 @@
     pt-[6vh] 
     mobile:flex-col
 }
+
+.ErroMensagem{
+    @apply bg-red-300 border-spacing-0 p-4 mb-4 rounded-2xl xl:w-[200px] mobile:w-[140px] xl:text-[15px] mobile:text-[10px]
+}
+
+.ErrosContainer{
+    @apply fixed top-0 left-1/2 transform -translate-x-1/2 mt-[8em] m-4 z-10 flex items-center justify-center gap-2;
+ }

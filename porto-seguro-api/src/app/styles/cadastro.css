@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .Gradient{
-@apply  flex flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center pt-16 relative h-[95vh]
+@apply  flex overflow-auto flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center pt-16 relative h-screen
 }
 
 .CabecalhoAzul{
