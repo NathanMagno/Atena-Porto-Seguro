@@ -12,7 +12,7 @@ export default function RodapeIntegrantes() {
 
  const navegar = () => {
     return (
-      window.open("https://github.com/Hitz299/Challenge-2sem/tree/front", "_blank")
+      window.open("https://github.com/Hitz299/Porto-Seguro-API.git", "_blank")
     )
 
   }
