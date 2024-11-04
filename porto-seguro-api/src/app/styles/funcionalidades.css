@@ -63,3 +63,18 @@
 .ErroMensagem {
     @apply bg-red-300 border-spacing-0 p-2 mb-0 rounded-2xl xl:w-[200px] mobile:w-[140px] xl:text-[15px] mobile:text-[10px];
 }
+
+.BgVeiculos{
+    @apply block m-auto p-0 bg-zinc-800 h-[100vh] relative
+}
+.MainVeiculos{
+    @apply flex flex-col flex-grow justify-between items-center
+}
+
+.Veiculo{
+    @apply border border-gray-300 shadow-md rounded-lg p-4 flex justify-between items-center border-y-orange-50 transition-transform transform hover:scale-105
+}
+
+.EditarVeiculo{
+    @apply flex flex-row
+}

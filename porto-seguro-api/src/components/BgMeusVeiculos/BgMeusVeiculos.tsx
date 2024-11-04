@@ -1,4 +1,4 @@
-
+import "@/app/styles/funcionalidades.css";
 
 interface BgVeiculosProps {
   children: React.ReactNode;
@@ -6,17 +6,17 @@ interface BgVeiculosProps {
 
 
 
-export default function BgMeusVeiculos({children}:BgVeiculosProps) {
+export default function BgMeusVeiculos({ children }: BgVeiculosProps) {
   return (
-        <>
-        
-            <div  className="BgVeiculos">
-                 
-                        {children}
+    <>
 
-            </div>
-        
-        
-        </>
+      <div className="BgVeiculos">
+        <main className="MainVeiculos">
+          {children}
+        </main>
+      </div>
+
+
+    </>
   )
 }
