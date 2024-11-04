@@ -25,13 +25,13 @@ export default function Home() {
 
 <BgInicial>
       <Funcionalidades   nome="Seus veículos"
-          icone={IconeCarrro} link="./login"/>
+          icone={IconeCarrro} link="./seus-veiculos"/>
 
       <Funcionalidades  nome="Adicionar Veiculos"
           icone={IconeAdd} link="./adicionar-veiculos"/>
 
       <Funcionalidades  nome="Contato com suporte"
-          icone={IconeContato} link=""/>
+          icone={IconeContato} link="./chatbot"/>
 
         
         <RodapeInicial/>

@@ -1,8 +1,8 @@
 "use client"
+import BgGradient from "@/components/BgGradient/BgGradient";
+import CabecalhoVerde from "@/components/CabecalhoVerde/CabecalhoVerde";
+import FormularioCadastroVeiculo from "@/components/FormularioCadastroVeiculo/FormularioCadastroVeiculo"
 import { useEffect } from "react";
-
-
-
 
 export default function AdicionarVeiculos() {
 
@@ -15,17 +15,15 @@ export default function AdicionarVeiculos() {
   return (
     <>
 
-
-
-      {/* <CabecalhoVerde titulo="Adiconar Veículos"/>
+    <CabecalhoVerde titulo="Adiconar Veículos"/>
 
 
       <BgGradient>
 
-         <FormularioCadastroVeiculo/>
+      <FormularioCadastroVeiculo/>
           
 
-      </BgGradient> */}
+      </BgGradient>
     </>
   )
 }

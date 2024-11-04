@@ -42,7 +42,7 @@
 }
 
 .CabecalhoVerde{
-    @apply flex items-center justify-between relative bg-oxigenio h-[10vh] px-[10vw] xl:gap-[50vw] mobile:gap-[10vw]
+    @apply flex  flex-row items-center justify-between relative bg-oxigenio h-[10vh] px-[10vw] xl:gap-[50vw] mobile:gap-[10vw]
     text-[20px] 4xl:text-[20px] 2xl:text-[14px] md:text-[10px]
 }
 
