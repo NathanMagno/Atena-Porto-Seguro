@@ -1,5 +1,5 @@
-
 import { getCarros } from "@/services/Carros"
+import { deletarCarro } from "@/services/Carros"
 import Carro from "@/services/Types"
 
 import { useEffect, useState } from "react"
@@ -7,7 +7,6 @@ import { useEffect, useState } from "react"
 export default function MeusVeiculosComponent() {
 
     useEffect(() => {
-
         fetchCarros()
     }, [])
 
@@ -20,6 +19,14 @@ export default function MeusVeiculosComponent() {
 
     }
 
+    async function handleDeletarCarro(chassi: string) {
+        try {
+            await deletarCarro(chassi);
+            await fetchCarros();
+        } catch (error) {
+            console.error("Erro ao deletar o carro:", error);
+        }
+    }
 
 
     return (
@@ -37,16 +44,13 @@ export default function MeusVeiculosComponent() {
                                 <p className="text-porto xl:text-[24px] font-bold">{carro.modelo}</p>
                             </div>
                             <div className="EditarVeiculo">
-                                <p className="Opcao OpcaoExcluir">Excluir</p>
+                                <p className="Opcao OpcaoExcluir" onClick={() => handleDeletarCarro(carro.chassi)}>Excluir</p>
                                 <p className="Opcao OpcaoEditar">Editar</p>
                             </div>
                         </div>
                     ))
                 )}
-
-
             </div>
         </>
-
     )
 }

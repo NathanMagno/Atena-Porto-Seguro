@@ -91,6 +91,7 @@ export default function FormularioCadastroVeiculo() {
               placeholder="Informe o chassi"
               value={carro.chassi}
               onChange={handleChange}
+              autoComplete="off"
             />
           </div>
 
@@ -104,6 +105,7 @@ export default function FormularioCadastroVeiculo() {
               placeholder="Informe a placa"
               value={carro.placa}
               onChange={handleChange}
+              autoComplete="off"
             />
           </div>
 
@@ -117,6 +119,7 @@ export default function FormularioCadastroVeiculo() {
               placeholder="Informe a marca"
               value={carro.marca}
               onChange={handleChange}
+              autoComplete="off"
             />
           </div>
 
@@ -130,6 +133,7 @@ export default function FormularioCadastroVeiculo() {
               placeholder="Informe o modelo"
               value={carro.modelo}
               onChange={handleChange}
+              autoComplete="off"
             />
           </div>
 
@@ -143,6 +147,7 @@ export default function FormularioCadastroVeiculo() {
               placeholder="Informe a cor"
               value={carro.cor}
               onChange={handleChange}
+              autoComplete="off"
             />
           </div>
 
@@ -156,6 +161,7 @@ export default function FormularioCadastroVeiculo() {
               placeholder="Informe o motor"
               value={carro.motor}
               onChange={handleChange}
+              autoComplete="off"
             />
           </div>
 

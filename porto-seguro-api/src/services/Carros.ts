@@ -1,3 +1,4 @@
+
 import Carro from "./Types"
 
 export async function getCarros() {
@@ -53,8 +54,8 @@ export async function deletarCarro(chassi: string) {
     })
 
     if (!promise.ok) {
-        throw new Error(`Erro: ${promise.status}`)
+        throw new Error(`Erro: ${promise.status}`);
     }
 
-    return promise.json()
+    return true;
 }
