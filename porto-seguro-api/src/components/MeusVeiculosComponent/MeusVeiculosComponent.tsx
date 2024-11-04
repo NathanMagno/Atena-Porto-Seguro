@@ -1,7 +1,7 @@
-import Lixeira from "@/icons/icons8-lixeira-30.png"
+
 import { getCarros } from "@/services/Carros"
 import Carro from "@/services/Types"
-import Image from "next/image"
+
 import { useEffect, useState } from "react"
 
 export default function MeusVeiculosComponent() {
@@ -28,17 +28,17 @@ export default function MeusVeiculosComponent() {
             <div className="VeiculosContainer">
 
                 {!carros.length ? (
-                    <h1 className="bg-oxigenio ">Loading...</h1>
+                    <h1 className="text-oxigenio text-2xl">Loading...</h1>
                 ) : (
 
                     carros.map((carro: Carro) => (
                         <div key={carro.chassi} className="Veiculo">
                             <div className="ModeloVeiculo">
-                                <p>{carro.modelo}</p>
+                                <p className="text-porto xl:text-[24px] font-bold">{carro.modelo}</p>
                             </div>
                             <div className="EditarVeiculo">
-                                <Image alt="Deletar" src={Lixeira} />
-                                <p className="EditarVeiculo">Editar</p>
+                                <p className="Opcao OpcaoExcluir">Excluir</p>
+                                <p className="Opcao OpcaoEditar">Editar</p>
                             </div>
                         </div>
                     ))

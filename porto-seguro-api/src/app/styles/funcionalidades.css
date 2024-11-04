@@ -67,14 +67,32 @@
 .BgVeiculos{
     @apply block m-auto p-0 bg-zinc-800 h-[100vh] relative
 }
+
 .MainVeiculos{
-    @apply flex flex-col flex-grow justify-between items-center
+    @apply flex flex-col flex-grow justify-center items-center w-[70vw]  m-auto h-[50vh] 
 }
 
 .Veiculo{
-    @apply border border-gray-300 shadow-md rounded-lg p-4 flex justify-between items-center border-y-orange-50 transition-transform transform hover:scale-105
+    @apply border border-gray-300 shadow-md rounded-lg p-4 flex justify-between items-center border-y-orange-50 transition-transform transform hover:scale-105 
 }
 
 .EditarVeiculo{
-    @apply flex flex-row
+    @apply flex flex-row gap-[1vw] border-collapse justify-end   xl:w-[120px] mobile:w-[100px]
+}
+
+.ModeloVeiculo{
+    @apply xl:w-[100px] mobile:w-[40px] flex items-center justify-center 
+}
+
+.VeiculosContainer{
+    @apply  lg:grid 
+    lg:grid-cols-[300px_300px_300px] lg:grid-rows-[8vh_8vh_8vh] lg:gap-x-28  mobile:flex mobile:flex-col mobile:gap-7 mobile:w-[70vw]
+}
+
+.Opcao{
+    @apply cursor-pointer text-oxigenio
+}
+
+.OpcaoExcluir{
+    @apply border-r border-oxigenio px-4
 }
