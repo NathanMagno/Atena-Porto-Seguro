@@ -61,7 +61,6 @@ export default function FormularioCadastroVeiculo() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="CadastrarVeiculosContainer">
           {erros.length > 0 && (
             <div className="ErrosContainer">
               {erros.map((erro, index) => (
@@ -71,6 +70,7 @@ export default function FormularioCadastroVeiculo() {
               ))}
             </div>
           )}
+        <div className="CadastrarVeiculosContainer">
 
           <div className="ContainerEntrada">
             <label htmlFor="chassi">Chassi</label>
