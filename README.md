@@ -89,7 +89,6 @@ vizualizar e adicionar veículos estão funcionais. A aplicação contém 3 mét
 
 ## Links
 
-Vídeo no Youtube: https://youtu.be/BlOwLmm67wk
 
 Repositório Remoto do Projeto: https://github.com/Hitz299/Porto-Seguro-API.git
 
