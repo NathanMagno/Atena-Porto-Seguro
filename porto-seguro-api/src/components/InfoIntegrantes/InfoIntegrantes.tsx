@@ -33,7 +33,7 @@ import Image from "next/image";
                                                          <a href="https://github.com/gudeaguiar" target="_blank"><Image className="GitHub" width={100} height={100}
                                                                  src="/github-icone.png"
                                                                  alt="git hub Gustavo" /></a>
-                                                         <a href="https://github.com/Hitz299" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                         <a href="https://github.com/nathanMagno" target="_blank"><Image className="GitHub" width={100} height={100}
                                                                  src="/github-icone.png"
                                                                  alt="git hub Nathan" /></a>
                                                  </div>
