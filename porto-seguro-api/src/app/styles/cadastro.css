@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Gradient{
+@apply  flex overflow-auto flex-col flex-wrap items-center justify-start bg-gradient-to-b from-[#68ee86] to-[#3da3d0] bg-cover bg-no-repeat bg-center text-center pt-16 relative h-screen
+}
+
+.CabecalhoAzul{
+@apply     flex bg-[#3da3d0] p-3 justify-center  items-center static h-[5vh]
+}
+
+.RodapeCadastro{
+@apply     mt-[5vh] text-base flex h-[10vh] flex-col items-center    
+}
+
+
+.Input{
+    @apply   border-none text-center justify-center py-2 px-5 text-[1.6em] rounded-[0.6em] bg-[#cececea1] mt-[1vh] md:w-[40vw]   mobile:w-[80vw]
+    }
+  
+
+.RodapeLink{
+@apply     no-underline text-inherit text-[1.2em]
+}
+
+.Li{
+@apply  block list-none cursor-pointer hover:text-aliceblue transition-all duration-100 ease-in  hover:text-[1.6em]
+} 
+
+.ListaDesordenada{
+@apply     flex justify-around gap-[10vw] lg:flex-row sm:flex-col sm:items-center
+ sm:gap-[8vh] mobile:flex-col
+}
+
+
+.ContainerEntrada{
+@apply     flex flex-col text-start items-center mx-auto 
+}
+
+
+
+.Formulario{
+    @apply flex flex-col gap-24
+}
+
+.FormularioCC{
+    @apply flex flex-col gap-16
+}
+
+.ContainerIntegrantes{
+@apply flex  mt-16  pb-8 items-start justify-center 
+}
+
+.IntegrantesTitulo{
+    @apply xl:text-[32px]  rounded-xl px-10  bg-fiap xl:w-[20vw] mobile:w-[50vw]
+    }
+
+    .BgIntegrantes {
+        @apply flex flex-col flex-wrap items-center justify-start bg-gray-950 bg-cover bg-no-repeat bg-center text-center relative overflow-hidden xl:h-[95vh] mobile:h-[110vh]
+      }
+      
+
+.IntegrantesInfo{
+    @apply mt-16 grid grid-cols-[33%_33%_33%] grid-rows-[50%_20%_30%] justify-items-center gap-8 bg-fiap rounded-2xl p-6 w-[90vw] mobile:text-[10px] xl:text-[16px] mobile:h-[38vh] mobile:pr-[8em]
+}
+
+
+.ListaGitHub{
+    @apply flex flex-row justify-between w-[100%] bg-fiap mt-6 rounded-full p-4 px-[12vw] 
+}
+
+
+.Gabriel{
+    @apply  block  rounded-full  xl:w-[140px] xl:h-[140px] mobile:h-[50px] mobile:w-[50px] 
+}
+
+.Gustavo{
+    @apply  block  rounded-full  xl:w-[140px] xl:h-[140px] mobile:h-[50px] mobile:w-[50px]
+}
+
+
+.Nathan{
+    @apply block  rounded-full  xl:w-[140px] xl:h-[140px] mobile:h-[50px] mobile:w-[50px]
+}
+
+.GitHub{
+    @apply block  rounded-full  xl:w-[80px] xl:h-[80px] mobile:h-[30px] mobile:w-[30px]
+}
+
+.RodapeIntegrantes{
+    @apply  mt-[5vh] text-base flex h-[10vh] flex-col items-center text-fiap gap-10 mobile:text-[10px] xl:text-[24px]
+}
+
+
+@layer{
+.RepositorioContainer{
+    @apply  mx-auto flex flex-row rounded-[32px] justify-center items-center gap-[1vw]  border-[0.15vw] border-[rgb(153,0,255)] bg-white
+     mb-[10vh] w-[28vw] cursor-pointer px-[1vw] py-[0.2vh] hover:bg-[#262626] hover:transition-all hover:duration-200 hover:ease-in-out text-[120%]
+      lg:text-[90%] md:text-[70%] sm:text-[50%] mobile:w-[70vw] lg:w-[22vw]
+}
+}
+

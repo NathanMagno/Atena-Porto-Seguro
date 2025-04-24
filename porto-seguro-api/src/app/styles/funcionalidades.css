@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.CadastrarVeiculosContainer
+{
+    @apply  grid 
+    lg:grid-cols-[40vw_40vw] lg:grid-rows-[14vh_14vh_14vh] 
+    lg:gap-y-[3vh] lg:gap-x-[10vw]
+    sm:grid-cols-[90vw] sm:grid-rows-[10vh] 
+    sm:gap-y-[1.1vh] mt-[10vh] relative
+}
+
+.Voltar{
+    @apply cursor-pointer xl:w-[50px] mobile:w-[35px]
+}
+
+.ChatContainer
+{
+    @apply   flex flex-col items-center 
+    h-[80vh] w-1
+    mx-auto
+    pb-4
+    rounded-[5px]
+}
+
+.UserInput{
+    @apply   flex-shrink-0 
+    h-[8vh] 
+   mobile:w-[85vw]
+   xl:w-[70vw]
+    border-none 
+    text-center 
+    p-[0.6em] px-[1.2em] 
+    text-[1.6em] 
+    rounded-[32px] 
+    bg-[#cececea1]
+
+}
+
+.ChatBox{
+    @apply relative flex  rounded-md
+    h-[60vh] 
+    border-[3px] border-[#3da3d0] 
+    p-[0.1em] 
+    text-white
+    bg-[#1d1d1d]
+    xl:w-[85vw] mobile:w-[95vw]  ;
+}
+
+.ContainerMensagem{
+    @apply    flex  
+    xl:flex-row items-center xl:gap-[6vw]
+    relative 
+    pt-[6vh] 
+    mobile:flex-col
+}
+.ErrosContainer {
+    @apply absolute top-0 left-0 right-0 mt-14 z-10 flex items-start justify-center gap-2 h-auto; 
+}
+
+
+.ErroMensagem {
+    @apply bg-red-300 border-spacing-0 p-2 mb-0 rounded-2xl xl:w-[200px] mobile:w-[140px] xl:text-[15px] mobile:text-[10px];
+}
+
+.BgVeiculos{
+    @apply block m-auto p-0 bg-zinc-800 h-[100vh] relative
+}
+
+.MainVeiculos{
+    @apply flex flex-col flex-grow justify-center items-center w-[70vw]  m-auto h-[50vh] 
+}
+
+.Veiculo{
+    @apply border border-gray-300 shadow-md rounded-lg p-4 flex justify-between items-center border-y-orange-50 transition-transform transform hover:scale-105 
+}
+
+.EditarVeiculo{
+    @apply flex flex-row gap-[1vw] border-collapse justify-end   xl:w-[120px] mobile:w-[100px]
+}
+
+.ModeloVeiculo{
+    @apply xl:w-[100px] mobile:w-[40px] flex items-center justify-center 
+}
+
+.VeiculosContainer{
+    @apply  lg:grid 
+    lg:grid-cols-[300px_300px_300px] lg:grid-rows-[8vh_8vh_8vh] lg:gap-x-28  mobile:flex mobile:flex-col mobile:gap-7 mobile:w-[70vw]
+}
+
+.Opcao{
+    @apply cursor-pointer text-oxigenio
+}
+
+.OpcaoExcluir{
+    @apply border-r border-oxigenio px-4
+}
