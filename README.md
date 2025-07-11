@@ -83,15 +83,15 @@ vizualizar e adicionar veículos estão funcionais. A aplicação contém 3 mét
 
 ## Integrantes
 
-* Nathan Magno Gustavo Cônsolo  RM 558987
-* Gustavo de Aguiar Lima Silva  RM 557707
-* Gabriel Yuji Suzuki  RM 556588
+* Nathan Magno Gustavo Cônsolo
+* Gustavo de Aguiar Lima Silva
+* Gabriel Yuji Suzuki
 
 ## Links
 
 Repositório Remoto do Projeto: https://github.com/Hitz299/Porto-Seguro-API.git
 
-Projeto Vercel: porto-seguro-api.vercel.app
+Projeto hospedado na Vercel: https://porto-seguro-api.vercel.app
 
 Repositório da API Java: https://github.com/Hitz299/API_JAVA_CARROS.git
 
